@@ -1,22 +1,18 @@
 # RUPC Transformer
 
-Transforma los datos del RUPC (Mexico) en entidades Popolo. Genera listado clasificador para institutiones estatales de México.
+Transforms data from RUPC (Mexico) into Popolo entities, and generates a classifier list for Mexican state institutions.
 
-## Ejemplo de uso
+## Usage
 
-Desde el directorio raíz:
-
-    node index.js -f FUNCION
+    node index.js -f FUNCTION
 
 ## Opciones
 
-El script acepta las siguientes opciones como argumentos:
-
-    --function -f       Función a utilizar (puede ser transform o classify)
+    --function  -f       Function to apply (transform | classify)
 
 #### classify
 
-Genera un listado clasificador (personas y empresas) para ayudar al extractor de entidades [ocds-entity-extract](http://gitlab.rindecuentas.org/equipo-qqw/ocds-entity-extract/). Envía el output a stdout como stream de objetos JSON (uno por línea).
+Generates a classifier list for persons and companies to help the [OCDS entity extractor](http://gitlab.rindecuentas.org/equipo-qqw/ocds-entity-extract/). Sends the output to stdout as a stream of JSON objects, one object per line.
 
 #### transform
 
